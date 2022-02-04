@@ -1,0 +1,14 @@
+{
+    "name": "How to SDVX?",
+    "short_name": "SDVX Wiki",
+    "icons": [
+        {
+            "src": "img/android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#e62b70",
+    "background_color": "#e62b70",
+    "display": "standalone"
+}
