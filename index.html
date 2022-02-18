@@ -9,22 +9,39 @@
     <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="manifest" href="site.webmanifest">
+    <script src="https://kit.fontawesome.com/593bf9e72f.js" crossorigin="anonymous"></script>
     <meta name="theme-color" content="#ab2255" />
+
 </head>
 
 <body>
+    <div class = top_menu>
+        <div class="dropdown">
+            <button id = dropbtn class = dropbtn>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a id =  I>I - Concept</a>
+              <a id = II>II - Démarrage rapide</a>
+              <a id = III>III - Scoring system</a>
+              <a id = IV>IV - Skill Analyser</a>
+              <a id = V>V - Volforce</a>
+              <a id = VI>VI - Options</a>
+            </div>
+       </div>
+    </div>
     <div class="main-content">
 
         <h1>Salut à toi, passager.</h1>
         <hr>
-        <p>
+        <p id = p>
             Tu as fait le bon choix en scannant ce code QR. Un bon équipier du vaisseau doit savoir s'en remettre au
             manuel des machines lorsqu'il ne sait pas encore s'en servir correctement.
         </p>
     </div>
     <div class="main-content">
         <img id='main-logo' src="img/sdvx.png" alt="SDVX logo">
-        <h1>I. Le concept</h1>
+        <h1 id = concept>I. Le concept</h1>
         <hr>
         <p>
             <b>Sound Voltex</b> est un jeu de rythme musical à défilement vertical, aussi appelé VSRG.
@@ -300,8 +317,11 @@
         <img src="img/volforce1.png" alt="volforce flower">
     </div>
     <div class="main-content">
-        <h1>VI. Les options du joueur</h1>
+        <h1 id = options>VI. Les options du joueur</h1>
     </div>
+
+
+<script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
