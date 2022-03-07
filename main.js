@@ -8,6 +8,7 @@ const III = document.getElementById("III")
 const IV = document.getElementById("IV")
 const V = document.getElementById("V")
 const VI = document.getElementById("VI")
+const maincontent = document.getElementsByClassName("main-content")
 
 function testo(){
     p.textContent = "zizi"
@@ -19,10 +20,9 @@ function OpenMenu() {
 
   function CloseMenu() {
       document('myDropdown').classList.toggle("show")
+
   }
-
-
-
+//maincontent.addEventListener('scroll',CloseMenu)
 dropbtn.addEventListener('click',OpenMenu)
 dropbtn.addEventListener('close',CloseMenu)
 I.addEventListener('click',scrolltoconcept)
