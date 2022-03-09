@@ -150,3 +150,10 @@ a, a:visited{
     height: 300px;
 }    
 
+#early {
+    color: red;
+}
+
+#late {
+    color: #6158e6;
+}

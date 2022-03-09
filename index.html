@@ -34,7 +34,7 @@
 
         <h1>Salut à toi, passager.</h1>
         <hr>
-        <p id = p>
+        <p>
             Tu as fait le bon choix en scannant ce code QR. Un bon équipier du vaisseau doit savoir s'en remettre au
             manuel des machines lorsqu'il ne sait pas encore s'en servir correctement.
         </p>
@@ -347,10 +347,17 @@
         <h3>&nbsp;&nbsp;► Line Color</h3>
         <p>Les paramètres offrent la possibilité de changer la couleur des lazers gauche et droit, si vous n'êtes pas à l'aise avec les couleurs par défault vous pourrez changer parmi <b>Bleu</b>, <b>Rouge</b>, <b>Jaune</b> et <b>Vert</b>.</p>   
         <img src="img/options_linecolor.png" alt = "Line color menu">
-        <h3>&nbsp;&nbsp;► Early/Late position</h3>
-      
-
-    
+        <h3 id = "earlylateposition">&nbsp;&nbsp;► <b id = "early">Early</b> / <b id = "late">Late</b> position</h3>
+        <p>Vous avez la possibilité de régler l'emplacement des <b id = "early">EARLY</b> / <b id = "late">LATE</b> ou vous voulez sur l'écran, si vous voulez les avoir en plein millieu pour pouvoir ajuster votre précision en temps réel, je conseille de choisir <b>UPPER</b>, si vous ne voulez pas les voir pendant que vous jouez, vous pouvez laisser par défault c'est a dire sur <b>LOWER</b></p>
+        <img src="img/options_nearposition.png" alt="Early/Late position menu">
+        <h3>&nbsp;&nbsp;► L'offset</h3>
+        <p>Dans Sound Voltex, la <b>précision</b> est la clé de la réussite, pas de <b>précision</b>, pas de bon scores, pas de <a href="volforce"><b>Volforce</b></a> et pas de S. Mais il est possible que vous vous sentez précis et que vous ne voyez que des <b id = "early">Early</b> ou que des <b id  = "late">Late</b>. Si c'est le cas, le problème ne vient pas forcément de vous; Entre le hardware de la borne, le périphérique audio et surtout votre propre décalage auditif, il n'est pas anodin d'avoir besoin de régler un décalage précis pour bien s'adapter à son rythme.</p>
+        <p><b>Pour trouver son décalage</b> vous pouvez regarder à la fin de ses tracks le nombre de <b id = "early">Early</b> / <b id = "late">Late</b> et regarder si un revient plus souvent que l'autre. Vous pouvez aussi régler votre <a href="#earlylateposition"><b>Early/Late position</b></a> sur <b>UPPER</b> et observer en direct le Early ou le Late sur une note ou vous êtes sur que  vous avez été précis. Chose importante, je conseille fortement de faire tout ça sur des charts que vous maitrisez, n'hésitez pas à prendre un niveau facile pour vous afin d'avoir un résultat précis à la fin.</p>
+        <img src="img/options_offest.png" alt="Offset menu">
+        <p><b>Pour régler son offset</b> il faut savoir qu'il y a deux types d'offset assez différents:</p>
+        <p><b>Le sound timing</b> vous permetra d'ajuster le décalage du son, allant de - 10ms à + 10ms. En utilisant <b>VOL-L</b>, mettez un offset <b id="early">+</b> si vous avez trop de <b id = "early">Early</b> et un offset <b id="late">-</b> si vous avez trop de <b id = "late">Late.</b></p>
+        <p><b>Le draw timing</b> est un offset visuel qui permet d'ajuster le décalage de la ligne de jugement, allant de - 10ms à + 10ms. En utilisant <b>VOL-R</b>, mettez un offset <b id="early">+</b> si vous avez trop de <b id = "early">Early</b> et un offset <b id="late">-</b> si vous avez trop de <b id = "late">Late.</b></p>
+        <p>Si vous ne savez pas lequel utiliser, je vous conseillerai d'utiliser de <b>Sound timing.</b></p>
     </div>
 
 
