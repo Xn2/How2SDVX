@@ -8,6 +8,7 @@ const III = document.getElementById("III")
 const IV = document.getElementById("IV")
 const V = document.getElementById("V")
 const VI = document.getElementById("VI")
+const VII =  document.getElementById("VII")
 const maincontent = document.getElementsByClassName("main-content")
 
 function testo(){
@@ -31,6 +32,7 @@ III.addEventListener('click',scrolltoscoring)
 IV.addEventListener('click',scrolltoskillanalyser)
 V.addEventListener('click',scrolltovolforce)
 VI.addEventListener('click',scrolltooptions)
+VII.addEventListener('click',scrolltoadvancedguide)
 
 function scrolltoconcept() {
     const concept = document.getElementById("concept")
@@ -99,3 +101,13 @@ function scrolltooptions() {
 
 }
 
+function scrolltoadvancedguide() {
+    const quickstart = document.getElementById("Advanced-guide")
+
+    quickstart.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest"
+    });
+
+}
