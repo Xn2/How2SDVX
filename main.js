@@ -11,9 +11,6 @@ const VI = document.getElementById("VI")
 const VII =  document.getElementById("VII")
 const maincontent = document.getElementsByClassName("main-content")
 
-function testo(){
-    p.textContent = "zizi"
-}
 
 function OpenMenu() {
     document.getElementById("myDropdown").classList.toggle("show");
