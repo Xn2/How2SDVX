@@ -9,10 +9,28 @@
     <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="manifest" href="site.webmanifest">
+    <script src="https://kit.fontawesome.com/593bf9e72f.js" crossorigin="anonymous"></script>
     <meta name="theme-color" content="#ab2255" />
+
 </head>
 
 <body>
+    <div class = top_menu>
+        <div class="dropdown">
+            <button id = dropbtn class = dropbtn>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a id =  I>I - Concept</a>
+              <a id = II>II - Démarrage rapide</a>
+              <a id = III>III - Scoring system</a>
+              <a id = IV>IV - Skill Analyser</a>
+              <a id = V>V - Volforce</a>
+              <a id = VI>VI - Options</a>
+              <a id = VII>VII - Guide Avancé</a>
+            </div>
+       </div>
+    </div>
     <div class="main-content">
 
         <h1>Salut à toi, passager.</h1>
@@ -24,7 +42,7 @@
     </div>
     <div class="main-content">
         <img id='main-logo' src="img/sdvx.png" alt="SDVX logo">
-        <h1>I. Le concept</h1>
+        <h1 id = concept>I. Le concept</h1>
         <hr>
         <p>
             <b>Sound Voltex</b> est un jeu de rythme musical à défilement vertical, aussi appelé VSRG.
@@ -85,7 +103,7 @@
         </p>
         <img src="img/start_game6.png" alt="Tuto demarrage sdvx 6">
         <p>
-            Tu es maintenant dans l'écran de sélection des chansons.
+            Tu es maintenant dans l'écran de sélection des chansons, si tu utilises un casque ou des écouteurs, tu peux régler  le volume avec les bouttons sur le numpad : <b>7</b> pour augementer et <b>1</b> pour baisser.
             <br><br> Utilise l'encodeur rotatif <b>droit</b> pour naviguer et <b>START</b> pour sélectionner.
             <br><br> Si tu te trompes à un moment, utilise le bouton <b>FX Gauche</b> pour revenir en arrière.
             <br><br>
@@ -119,7 +137,7 @@
             <br><br>Si c'est la première fois que tu joues, tu peux l'ignorer et <b>skipper</b> l'attente en appuyant
             sur les <b>deux boutons FX</b> en même temps.
         </p>
-        <img src="img/start_game11.jpg" alt="Tuto demarrage sdvx 11">
+        <img src="img/start_game11.jpg" alt="Tuto demarrage sdvx 11" id = matching-screen>
         <p>
             La chanson va se lancer, c'est à toi de jouer !
         </p>
@@ -212,7 +230,7 @@
                 <td>&#x3C; 7 000 000</td>
             </tr>
         </table>
-        <h3>&nbsp;&nbsp;► Les barres de vie.</h3>
+        <h3 id = "rates">&nbsp;&nbsp;► Les barres de vie.</h3>
         <p>Votre barre de vie est affichée à droite de l'écran pendant que vous jouez.</p>
         <p>Il y a deux types de barres de vie dans un crédit normal : l'<b>EFFECTIVE RATE</b> (bleue) et l'<b>EXCESSIVE RATE</b> (orange), qui sont complètement différentes.</p> 
         <p>Si vous n'avez pas touché aux options du jeu, vous jouez avec la barre bleue.</p>
@@ -300,8 +318,78 @@
         <img src="img/volforce1.png" alt="volforce flower">
     </div>
     <div class="main-content">
-        <h1>VI. Les options du joueur</h1>
+        <h1 id = options>VI. Les options du joueur</h1>
+        <hr>
+        <h3>&nbsp;&nbsp;► Accéder aux options</h3>
+        <p>Le jeu propose un menu d'options complet permettant de s'adapter aux joueurs. Pour y accéder, vous devrez une fois dans l'écran de sélection des chançons, appuyer sur les deux bouttons <b>FX-L</b> et <b>FX-R</b> en même temps. </p>
+        <p>Pour naviguer à travers les différents sous menus, utlilisez <b>FX-L</b> pour aller vers la gauche, et <b>FX-R</b> pour aller vers la droite.</p>
+        <p>Pour procéder à un réglage, utilisez <b>VOL-L</b> ou <b>VOL-R</b></p>
+        <h3>&nbsp;&nbsp;► La High-Speed</h3>
+        <p>Pour bien progresser dans Sound Voltex, il est très important de savoir régler sa <b>High-Speed</b>. Elle correspond a la vitesse de défilement des objets à l'écran. La <b>High-Speed</b> définit en autres termes le juste millieu entre son temps de réaction et ce qu'on est capable de lire. Attention, Réduire sa vitesse ne change pas le bpm de la chart. Que vous ayez la speed maximale ou minimale vous devrez taper les bouttons à la même vitesse.</p> 
+        <p>Voici un expemple plus parlant : A gauche, high-speed = <b>100</b>. A droite, high speed = <b>820</b></p>
+        <p><img src="img/speed.gif" id = "speedgif"> <img src="img/nospeed.gif" id = "nospeedgif"> 
+        <p>Pour la régler c'est très simple, utilisez <b>VOL-R</b> et quand la vitesse vous convient, pensez à appuyer sur numpad <b>6</b> pour sauvegarder votre vitesse. Si vous l'avez fait correctement, vote vitesse devrait s'afficher a droite en rouge (<b>1</b>). Sinon c'est qu'elle n'est pas sauvegardé </p>
+        <img src="img/options_highspeed.png" alt = "High-Speed menu">
+        <p>Il est également possible de régler votre vitesse lors du <a href ="#matching-screen"><b>Matching Screen</b></a>, et même en jeu ! pour cela, tout en restant appuyé sur <b>START</b> tournez <b>VOL-R</b>. Astuce : si vous voulez régler plus précisément, double tapez start avant de hold vous permetra d'aller de 1 en 1. Comme pour le menu d'options, n'oubliez pas d'appuyer sur numpad <b>6</b> pour sauvegarder votre vitesse. </p>
+        <h3>&nbsp;&nbsp;► Les barres de vie</h3>
+        <p>Ce menu vous permet de choisir votre <a href ="#rates">  <b>Barre de vie</b></a> entre <b>EFFECTIVE RATE</b>, <b>EXCESSIVE RATE</b>, et <b>EFFECTIVE RATE + ARS</b></p>
+        <img src="img/options_ratestyle.png" alt = "Rate style menu">
+        <p>L'<b>EFFECTIVE RATE</b> ou l'<b>EXCESSIVE RATE</b> en <b>LIGHT START</b> met fin a votre crédit si vous <b>CRASHEZ</b> votre track, tandis que le <b>STANDARD START</b> vous permet de <b>CRASH</b> et de ne pas provoquer un arrêt de jeu. </p>
+        <p>L'<b>EXCESSIVE RATE + ARS</b> est disponible en <b>STANDARD START</b>, en <b>PREMIUM TIME</b>, et en <b>BLASTER</b>, et permet de basculer sur l'<b>EFFECTIVE RATE</b> si jamais vous tombez a 0% de l'<b>EXCESSIVE RATE.</b></p>
+        <h3>&nbsp;&nbsp;► Challenge options</h3>
+        <p>Uniquement pendant un <b>PREMIUM TIME</b>, vous avez la possibilité de vous mettre un <b>"challenge"</b>. Il se choisit entre : <b>AAA</b>, <b>AAA+</b>, <b>S</b>, <b>UC</b> et <b>PUC</b>. Le challenge à pour rôle de de vous faire automatiquement recomencer votre track si votre challenge est raté. Exemple, si votre challenge est mis sur <b>UC</b> et que vous faites une <b>erreur</b>, vous recommencerez automatiquement au début de la track.</p>
+        <img src="img/options_challenge.png" alt ="Challenge menu">
+        <p>/!\ Si vous n'appuyez pas sur <b>00</b>, rater votre challenge vous fera seulement crash et non restart automatiquement</p>
+        <h3>&nbsp;&nbsp;► Mirror/Random</h3>
+        <p>Le mode <b>Mirror</b> permet au joueur d'inverser la disposition des notes sur de la ligne de jeu, le BT-A devenant BT-D, BT-B devenant BT-C, FX-L devenant FX-R et VOL-L devenant VOL-R<b> (encadré vert)</b>. Le mode <b>Random</b> permet au joueur qu'une note soit aléatoirement échangée avec une autre, Exemple une note qui devrait tomber sur BT-A se retrouve aléatoirement mise sur BT-B, BT-C ou BT-D <b>(encadré rouge)</b>. Ces deux modes peuvent aussi être combinés.</p>
+        <img src="img/options_mirror.png" alt = "Mirror menu">
+        <p>Le mode <b>Mirrior</b> peut s'avérer utile sur des tracks qui mobilisent une main en particulier et que le joueur est plus à l'aise avec son autre main. Le mode <b>Random</b> n'est jamais un avantage comme chaque try est différent, il est difficile de construire une mémoire musculaire et visuelle de la chart. Ce mode est principalement utilisé pour le fun.</p>
+        <h3>&nbsp;&nbsp;► Line Color</h3>
+        <p>Vous pouvez changer la couleur des lazers gauche et droit, si vous n'êtes pas à l'aise avec les couleurs par défault vous pourrez changer parmi <b>Bleu</b>, <b>Rouge</b>, <b>Jaune</b> et <b>Vert</b>. (   Oui il est possible d'avoir la même couleur pour les deux lazers...)</p>   
+        <img src="img/options_linecolor.png" alt = "Line color menu">
+        <h3 id = "earlylateposition">&nbsp;&nbsp;► <b id = "early">Early</b> / <b id = "late">Late</b> position</h3>
+        <p>Vous avez la possibilité de régler l'emplacement des <b id = "early">EARLY</b> / <b id = "late">LATE</b> où vous voulez sur l'écran. Si vous voulez les avoir en plein millieu pour pouvoir ajuster votre précision en temps réel, je conseille de choisir <b>UPPER</b>, si vous ne voulez pas les voir pendant que vous jouez, il y a une 5ème option <b>NONE</b> qui les désactive complètement.</p>
+        <img src="img/options_nearposition.png" alt="Early/Late position menu">
+        <h3>&nbsp;&nbsp;► L'offset</h3>
+        <p>Dans Sound Voltex, la <b>précision</b> est la clé de la réussite, pas de <b>précision</b>, pas de bon scores, pas de <a href="volforce"><b>Volforce</b></a>. Mais il est possible que vous vous sentez précis et que vous ne voyez que des <b id = "early">Early</b> ou que des <b id  = "late">Late</b>. Si c'est le cas, le problème ne vient pas forcément de vous; Entre le hardware de la borne, le périphérique audio et surtout votre propre décalage auditif, il n'est pas anodin d'avoir besoin de régler un décalage précis pour bien s'adapter à son rythme.</p>
+        <p><b>Pour trouver son décalage</b> vous pouvez regarder à la fin de ses tracks le nombre de <b id = "early">Early</b> / <b id = "late">Late</b> et voir si un revient plus souvent que l'autre. Vous pouvez aussi régler votre <a href="#earlylateposition"><b>Early/Late position</b></a> sur <b>UPPER</b> et observer en direct le Early ou le Late sur une note ou vous êtes sur que  vous avez été précis. Chose importante, je conseille fortement de faire tout ça sur des charts que vous maitrisez, n'hésitez pas à prendre un niveau plus facile pour vous afin d'obtenir un résultat précis à la fin.</p>
+        <img src="img/options_offest.png" alt="Offset menu">
+        <p><b>Pour régler son offset</b> il faut savoir qu'il y a deux types d'offset assez différents:</p>
+        <p><b>Le sound timing</b> vous permetra d'ajuster le décalage du son, allant de -10 à + 10. En utilisant <b>VOL-L</b>, mettez un offset <b id="early">+</b> si vous avez trop de <b id = "early">Early</b> et un offset <b id="late">-</b> si vous avez trop de <b id = "late">Late.</b></p>
+        <p><b>Le draw timing</b> est un offset visuel qui permet d'ajuster le décalage de la ligne de jugement, allant de - 10 à + 10. En utilisant <b>VOL-R</b>, mettez un offset <b id="early">+</b> si vous avez trop de <b id = "early">Early</b> et un offset <b id="late">-</b> si vous avez trop de <b id = "late">Late.</b></p>
+        <p>Si vous ne savez pas lequel utiliser, je vous conseillerai d'utiliser le <b>Sound timing.</b></p>
+        <h3>&nbsp;&nbsp;► Et le dernier menu</h3>
+        <p>Bon celui la me parait assez clair visuellement, pas besoin de l'expliquer, n'oubliez pas que le volume peut aussi se régler avec numpad <b>7</b> et numpad <b>1</b></p>
+        <img src="img/options_volume.png" alt = "Volume menu">
+    
     </div>
+    <div class = "main-content">
+        <h1 id = Advanced-guide>VII. Guide Avancé</h1>
+        <hr>
+        <h3>&nbsp;&nbsp;► Comment positioner ses mains</h3>
+        <p>Il est important de prendre les bons réflexes rapidement lors de sa progression dans le jeu, comme la bonne position des mains sur le controlleur.</p>
+        <p>Premièrement, pour les bouttons A B C et D, la disposition des doigts la plus classique est celle ci :</p>
+        <img src="img/advanced_handpos.png">
+        <p>Avec les indexes sur B et C, et les majeurs + annulaires sur A et D. cette position permet d'avoir une force bien répartie sur tous les bouttons et une facilité à pouvoir déplacer ses mains éfficacement sur le controlleur (chose qu'il va falloir apprendre à faire à partir des niveaux Avancés)</p>
+        <p>Cette position permet surtout de pouvoir facilement taper les <b>FX</b> avec les <b>POUCES</b>.</p>
+        <img src="img/advanced_thumbpos.png">
+        <p>Beaucoup de débutants appuient instinctivement les FX avec leurs paumes de mains, et c'est une grosse <b>erreur</b> ! Croyez moi, passé les niveaux 10 ils se retrouvent bloqués</p>
+        <h3>&nbsp;&nbsp;► Comment tourner les lazers</h3>
+        <p>Au début du jeu, j'ai remarqué que tous les joueurs finissaient par utiliser une mauvaise technique pour tourner les lazers, on l'appelle le "HandBlade" et il consisite a enrouler la knob avec la paume de sa main (voir photo ci dessous)</p>
+        <!--INSERER PHOTO HANDBLADE-->
+        <img src="img/advanced_handblade.png" alt="handblade">
+        <p>Le Handblade est généralement la technique la plus instinctive pour un joueur alors qu'elle n'est vraiment pas efficace : elle ne permet pas une grosse rotation sans devoir replacer sa main, d'autant plus si vous avez de petites mains, elle est souvent mal détécté par la borne, à partir d'un certain niveau, le handblade devient une perte d'energie et de rapidité considérable, et enfin, vous risquez d'abimer l'encodeur ou encore de vous <b>casser un doigt ou un ongle.</b></p>
+        <p>Mais alors comment faire ? La méthode la plus classique est celle que le jeu veux que vous fassiez, c'est a dire :</p>
+        <!--INSERER PHOTO PA HANDBLADE-->
+        <img src="img/advanced_knob.png" alt="knob">
+        <p>Il existe d'autres techniques qui fonctionnent plutot bien, libre à vous de choisir.</p>
+        <h3>&nbsp;&nbsp;► Outils pratiques</h3>
+        <p>- La tierlist par difficulté de toutes les charts à partir du niveau 16, parfait pour farmer la volforce : <a href="https://docs.google.com/spreadsheets/d/1cFltguBvPplBem-x1STHnG3k4TZzFfyNEZ-RwsQszoo/edit#gid=327051877">ICI</a></p>
+        <p>- Site répertoriant toutes les charts de toutes les versions sous forme imagée pour pouvoir apprendre, comprendre des patterns sans avoir à s'embêter avec une vidéo : <a href="http://sdvx.in">ICI</a></p>
+        <p><b>- Voilà ! Maintenant c'est à toi de jouer ! Tu as toutes les connaissances en main pour parvenir à faire monter ton pseudo dans le <a href = "https://projectflower.eu/arcade/58">leadeboard de l'Alphanef</a> ! Bonne chance.</b></p>
+        <hr>
+        <p id = "credits">Guide Rédigé par <a href = "https://www.twitter.com/AeonBonk"><b>Lyne#8499</b></a> et <a href = "https://www.twitter.com/AeonBonk"><b>Aeon#4258</b></a> Pour <a href ="https://twitter.com/Alpha_Nef"><b>l'Alphanef</b></a></p>
+    </div>
+<script type="text/javascript" src="main.js"></script>
 </body>
-
 </html>
