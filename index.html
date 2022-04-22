@@ -32,7 +32,6 @@
        </div>
     </div>
     <div class="main-content">
-
         <h1>Salut à toi, passager.</h1>
         <hr>
         <p>
@@ -41,7 +40,7 @@
         </p>
     </div>
     <div class="main-content">
-        <img id='main-logo' src="img/sdvx.png" alt="SDVX logo">
+        <img id='main-logo' src="img/sdvxeg.png" alt="SDVX logo">
         <h1 id = concept>I. Le concept</h1>
         <hr>
         <p>
@@ -254,15 +253,21 @@
         <p>La lampe que vous avez sur une chanson est complètement indépendante de votre score, et elle ne peut pas baisser. Par exemple, si vous obtenez un ULTIMATE CHAIN, et que vous obtenez un meilleur score par la suite en CLEAR, la lampe <b>restera</b> ULTIMATE CHAIN.</p>        
         <h3>&nbsp;&nbsp;► L'écran de score.</h3>
         <p>Des que vous arrivez sur l'écran de score, je vous conseille d'appuyer sur les <b>deux boutons FX</b> en même temps pour afficher les détails.</p>
-        <img src="img/score_detail.png" alt="effective rate">
-            <p><b>1</b> - Si l'encart bleu s'affiche, vous venez de battre le record du serveur !</p>
-            <p><b>2</b> - Si l'encart jaune s'affiche, vous venez de battre le record de l'AlphaNef !</p>
-            <p><b>3</b> - Votre note (ici S)</p>
-            <p><b>4</b> - Votre lampe (ici PERFECT ULTIMATE CHAIN)</p>
-            <p><b>5</b> - Votre score</p>
-            <p><b>6</b> - Votre barre de vie à la fin de la chanson</p>
-            <p><b>7</b> - Les détails de vos jugements, le nombre de CRITICAL / NEAR / ERROR et le nombre de EARLY / LATE, ainsi que votre combo maximum</p>
-            <p><b>8</b> - Récapitulatif de la monnaie du jeu gagnée (en PCB)</p>
+        <img src="img/score_detaileg.png" alt="effective rate">
+            <p><b>1</b> - Votre score</p>
+            <p><b>2</b> - Votre note (ici S)</p>
+            <p><b>3</b> - Votre lampe (ici ULTIMATE CHAIN)</p>
+            <p><b>4</b> - Titre de la track</p>
+            <p><b>5</b> - Votre score par rapport a votre meilleur score, affiché avec un <b>+</b> si vous l'avez vaincu et avec un <b>-</b> si vous avez fait moins bien</p>
+            <p><b>6</b> - La difficulté de la song (ici Advenced 15)</p>
+            <p><b>7</b> - Le <a href="#challenge">challenge</a> actif et le nombre d'éssais consécutifs avant de faire votre score (Uniquement affiché en <b>Premium time start)</b></p>
+            <p><b>8</b> - Le détail de toutes les notes de la chart avec <b>CHIP</b> qui correspond aux notes simples BT, <b>LONG</b> qui correspond aux notes longues BT, et <b>VOL</b> qui correspond aux Lazers. Avec ceci vous pouvez voir celles que vous avez tapé en Critical, Near ou Error. Pour finir il y a aussi le combo maximum. </p>
+            <p><b>9</b> - Les détails de vos jugements, le nombre de CRITICAL / NEAR / ERROR et le nombre de EARLY / LATE.</p>
+            <p><b>10</b> - Votre barre de vie a la fin de la track</p>
+            <p><b>11</b> - Récapitulatif de la monnaie du jeu gagnée (en PCB)</p>
+            <p><b>12</b> - La jauge d'extrack, en standard start, clear une track vous permet de remplire une case de la jauge (5 au total) et lorsqu'elle est remplie, vous bénéficierez d'une track supplémentaire pendant votre crédit (4 au lieu de 3)</p>
+            <p><b>13</b> - Si cet encadré bleu s'affiche, vous venez de battre votre record personel ! et si il y a le nom d'un joueur, vous venez de battre le meilleur score jamais enregistré sur la borne !</p>
+                
     </div>
     <div class="main-content" >
         <h1 id='skill-analyzer'>IV. SKILL ANALYZER</h1>
@@ -276,7 +281,7 @@
         <img src="img/skill_analyzer0.jpg" alt="skill analyzer niveaux">
         <h3>&nbsp;&nbsp;► Les badges.</h3>
         <p>Arriver au bout d'un SKILL ANALYZER vous <b>octroie un badge</b> correspondant au niveau que vous avez réussi, qui sera affiché à côté de votre nom sur votre carte de joueur.</p>
-        <img src="img/skill_analyzer1.png" alt="profil">
+        <img src="img/skill_analyzer1eg.png" alt="profil">
         <p>Arriver au bout de la dernière course d'un niveau de SKILL ANALYZER vous octroie des <b>ailes argentées</b> autour de votre badge.</p>
         <p>Arriver au bout de toutes les courses d'un niveau de SKILL ANALYZER vous octroie des <b>ailes dorées</b> autour de votre badge.</p>
         <p>Arriver au bout de toutes les courses d'un niveau de SKILL ANALYZER avec une moyenne de score générale dépassant la valeur dans tableau ci-dessous vous octroie un <b>halo doré</b> autour de votre badge.</p>
@@ -312,10 +317,10 @@
         <p>Il s'agit d'un nombre, compris entre <b>0.00</b> et <b>~22.00</b>, qui donne une approximation de votre niveau actuel.</p>
         <p>Contrairement au <a href="#skill-analyzer"><b>SKILL ANALYZER</b></a>, la VOLFORCE est calculée <b>automatiquement</b> lorsque vous jouez normalement, et ne nécéssite pas de mode de jeu spécifique.</p>
         <p>A chaque fois que vous finisez une chanson, l'algorithme de VOLFORCE lui attribue une valeur, pondérée par plusieurs facteurs comme le <b>niveau</b> de la chanson et votre <b>score</b>.</p>
-        <img src="img/volforce0.png" alt="volforce score">
+        <img src="img/volforce0eg.png" alt="volforce score">
         <p>Votre total de VOLFORCE est simplement l'<b>addition</b> de vos <b>50 meilleurs scores</b> (ceux qui ont la VOLFORCE la plus élevée). Il est donc normal que votre progression ralentisse drastiquement lorsque vous atteignez votre 50ème score au total.</p>
         <p>La valeur de VOLFORCE pour chaque chanson n'est pas directement disponible sur le jeu, mais vous pouvez la consulter depuis l'interface flower.</p>
-        <img src="img/volforce1.png" alt="volforce flower">
+        <img src="img/volforce1eg.png" alt="volforce flower">
     </div>
     <div class="main-content">
         <h1 id = options>VI. Les options du joueur</h1>
@@ -336,7 +341,7 @@
         <img src="img/options_ratestyle.png" alt = "Rate style menu">
         <p>L'<b>EFFECTIVE RATE</b> ou l'<b>EXCESSIVE RATE</b> en <b>LIGHT START</b> met fin a votre crédit si vous <b>CRASHEZ</b> votre track, tandis que le <b>STANDARD START</b> vous permet de <b>CRASH</b> et de ne pas provoquer un arrêt de jeu. </p>
         <p>L'<b>EXCESSIVE RATE + ARS</b> est disponible en <b>STANDARD START</b>, en <b>PREMIUM TIME</b>, et en <b>BLASTER</b>, et permet de basculer sur l'<b>EFFECTIVE RATE</b> si jamais vous tombez a 0% de l'<b>EXCESSIVE RATE.</b></p>
-        <h3>&nbsp;&nbsp;► Challenge options</h3>
+        <h3 id = "challenge">&nbsp;&nbsp;► Challenge options</h3>
         <p>Uniquement pendant un <b>PREMIUM TIME</b>, vous avez la possibilité de vous mettre un <b>"challenge"</b>. Il se choisit entre : <b>AAA</b>, <b>AAA+</b>, <b>S</b>, <b>UC</b> et <b>PUC</b>. Le challenge à pour rôle de de vous faire automatiquement recomencer votre track si votre challenge est raté. Exemple, si votre challenge est mis sur <b>UC</b> et que vous faites une <b>erreur</b>, vous recommencerez automatiquement au début de la track.</p>
         <img src="img/options_challenge.png" alt ="Challenge menu">
         <p>/!\ Si vous n'appuyez pas sur <b>00</b>, rater votre challenge vous fera seulement crash et non restart automatiquement</p>
