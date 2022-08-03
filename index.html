@@ -342,9 +342,11 @@
         <p>Si vous êtes débutant, je vous conseille de vous mettre a 3.00 pour commencer. Pensez à appuyer sur numpad <b>6</b> pour sauvegarder votre vitesse. Si vous l'avez fait correctement, un trait devrait apparaitre (1). Sinon c'est qu'elle n'est pas sauvegardé </p>
         <img src="img/options_highspeedeg.png" alt = "High-Speed menu">
         <p>Il est également possible de régler votre vitesse lors du <a href ="#matching-screen"><b>Matching Screen</b></a>, et même en jeu ! pour cela, tout en restant appuyé sur <b>START</b> tournez <b>VOL-R</b>. Astuce : si vous voulez régler plus précisément, double tapez start avant de hold vous permetra d'aller de 1 en 1. Comme pour le menu d'options, n'oubliez pas d'appuyer sur numpad <b>6</b> pour sauvegarder votre vitesse. </p>
-        <h3>&nbsp;&nbsp;► L'offset</h3>
+        <h3 id = "offset">&nbsp;&nbsp;► L'offset</h3>
         <p>Dans Sound Voltex, la <b>précision</b> est la clé de la réussite, pas de <b>précision</b>, pas de bon scores, pas de <a href="volforce"><b>Volforce</b></a>. Mais il est possible que vous vous sentez précis et que vous ne voyez que des <b id = "early">Early</b> ou que des <b id  = "late">Late</b>. Si c'est le cas, le problème ne vient pas forcément de vous; Entre le hardware de la borne, le périphérique audio et surtout votre propre décalage auditif, il n'est pas anodin d'avoir besoin de régler un décalage précis pour bien s'adapter à son rythme.</p>
-        <p><b>Pour trouver son décalage</b> vous pouvez regarder à la fin de ses tracks le nombre de <b id = "early">Early</b> / <b id = "late">Late</b> et voir si un revient plus souvent que l'autre. Vous pouvez aussi régler votre <a href="#earlylateposition"><b>Early/Late position</b></a> sur <b>UPPER</b> et observer en direct le Early ou le Late sur une note ou vous êtes sur que  vous avez été précis. Chose importante, je conseille fortement de faire tout ça sur des charts que vous maitrisez, n'hésitez pas à prendre un niveau plus facile pour vous afin d'obtenir un résultat précis à la fin.</p>
+        <p><b>Pour trouver son décalage</b>, la méthode la plus efficace est d'utiliser la <a href="#Preview" ><b>Preview</b></a> avec <a href="#msdisplay"><b>L'affichage des ms</b></a> sur <b>Critical</b> pour voir en temps réel si vous avez un décalage. Vous pouvez également regarder à la fin de ses tracks le nombre de <b id = "early">Early</b> / <b id = "late">Late</b> et voir si un revient plus souvent que l'autre.
+        <br>
+        <br> 
         <img src="img/options_offseteg.png" alt="Offset menu">
         <p><b>Pour régler son offset</b> il faut savoir qu'il y a deux types d'offset assez différents:</p>
         <p><b>Le sound timing</b> vous permetra d'ajuster le décalage du son, allant de -20 à + 20. En utilisant <b>VOL-L</b>, mettez un offset <b id="early">+</b> si vous avez trop de <b id = "early">Early</b> et un offset <b id="late">-</b> si vous avez trop de <b id = "late">Late.</b></p>
@@ -355,13 +357,43 @@
         <img src="img/options_nearcond.png" alt="Nearcondition">
         <p><b>Critical</b> : Affiche un <b id="early">Early</b>/<b id="late">Late</b> plus transparant qui apparait seulement si la note a été touchée entre 20.5ms et 41ms de retard ou d'avance</p>
         <p><b>OFF</b> : N'affiche pas de <b id="early">Early</b>/<b id="late">Late</b> sur votre écran</p>
-        <h3>&nbsp;&nbsp;► Affichage des ms</h3>
+        <h3 id = "msdisplay">&nbsp;&nbsp;► Affichage des ms</h3>
         <p>En plus des <b id="early">Early</b>/<b id="late">Late</b>, vous pouvez voir précisement de combien de milli-secondes vous êtes décalé. </p>
         <img src="img/options_ms.png" alt="ms">
         <p>par défaut, les ms s'affichent après un Near mais encore une fois vous pouvez le changer :</p>
-        <p><b>All</b> Affiche en permanance les ms : Gris quand elles sont inférieures à +20.5ms ou -20.5ms, en Rouge ou Bleu clair quand elles sont comprises entre +20.5ms ou -20.5ms et +41ms ou -41ms, et en Rouge ou bleu quand elles sont supérieures à +41ms ou -41ms.</p>
-        <p><b>Critical</b>: les affiche aussi en </p>
-
+        <p><b>All</b> : Affiche en permanance les ms : Gris quand elles sont inférieures à +20.5ms ou -20.5ms, en Rouge ou Bleu clair quand elles sont comprises entre +20.5ms ou -20.5ms et +41ms ou -41ms, et en Rouge ou bleu quand elles sont supérieures à +41ms ou -41ms.</p>
+        <p><b>Critical</b> : Pareil que <b>All</b> avec les ms Gris en moins</p>
+        <p><b>Near</b> : Pareil que <b>Critical</b> avec les ms Rouge et bleu Clair en moins</p>
+        <p><b>Off</b> : Désactive l'affichage des milli-secondes</p>
+        <h3 id = "earlylateposition">&nbsp;&nbsp;► <b id = "early">Early</b> / <b id = "late">Late</b> position</h3>
+        <p>Vous avez la possibilité de régler l'emplacement des <b id = "early">EARLY</b> / <b id = "late">LATE</b> (et les milli-secondes) où vous voulez sur l'écran. Si vous voulez les avoir en plein millieu pour pouvoir ajuster votre précision en temps réel, je conseille de choisir <b>UPPER</b>, si vous ne voulez pas les voir pendant que vous jouez, il y a une 5ème option <b>OFF</b> qui les désactive complètement.</p>
+        <img src="img/options_nearpositioneg.png" alt="Early/Late position menu">
+        <h3 id = "Preview">&nbsp;&nbsp;► Preview</h3>
+        <p>la Preview permet de lancer une simulation comme si vous étiez en train de jouer, son utilité principale est d'aider a calibrer son <b><a href="#offset">Offset</a></b></p> 
+        <img src="img/options_previeweg.png">
+        <h3 id = "navsound">&nbsp;&nbsp;► NavSound</h3>
+        <p>Cette option permet de faire taire l'insuppportable Rasis qui commente chaque faits et gestes pendant votre crédit. Si vous en avez marre de sa voix stridente, cette option est faite pour vous !</p>
+        <img src="img/options_navsound.png">
+        <h3>&nbsp;&nbsp;► Line Color</h3>
+        <p>Vous pouvez changer la couleur des lazers gauche et droit, si vous n'êtes pas à l'aise avec les couleurs par défault vous pourrez changer parmi <b>Bleu</b>, <b>Rouge</b>, <b>Jaune</b> et <b>Vert</b>. (   Oui il est possible d'avoir la même couleur pour les deux lazers...)</p>   
+        <img src="img/options_linecoloreg.png" alt = "Line color menu">
+        <h3>&nbsp;&nbsp;► Mirror/Random</h3>
+        <p>Le mode <b>Mirror</b> permet au joueur d'inverser la disposition des notes sur de la ligne de jeu, le BT-A devenant BT-D, BT-B devenant BT-C, FX-L devenant FX-R et VOL-L devenant VOL-R. Le mode <b>Random</b> permet au joueur qu'une note soit aléatoirement échangée avec une autre, Exemple une note qui devrait tomber sur BT-A se retrouve aléatoirement mise sur BT-B, BT-C ou BT-D. Ces deux modes peuvent aussi être combinés.</p>
+        <img src="img/options_mirroreg.png" alt = "Mirror menu">
+        <p>Le mode <b>Mirrior</b> peut s'avérer utile sur des tracks qui mobilisent une main en particulier et que le joueur est plus à l'aise avec son autre main. Le mode <b>Random</b> n'est jamais un avantage comme chaque try est différent, il est difficile de construire une mémoire musculaire et visuelle de la chart. Ce mode est principalement utilisé pour le fun.</p>
+        <h3>&nbsp;&nbsp;► Les barres de vie</h3>
+        <p>Ce menu vous permet de choisir votre <a href ="#rates">  <b>Barre de vie</b></a> entre <b>EFFECTIVE RATE</b>, <b>EXCESSIVE RATE</b>, et <b>EFFECTIVE RATE + ARS</b></p>
+        <img src="img/options_ratestyleeg.png" alt = "Rate style menu">
+        <p>L'<b>EFFECTIVE RATE</b> ou l'<b>EXCESSIVE RATE</b> en <b>LIGHT START</b> met fin a votre crédit si vous <b>CRASHEZ</b> votre track, tandis que le <b>STANDARD START</b> vous permet de <b>CRASH</b> et de ne pas provoquer un arrêt de jeu. </p>
+        <p>L'<b>EXCESSIVE RATE + ARS</b> est disponible en <b>STANDARD START</b>, en <b>PREMIUM TIME</b>, et en <b>BLASTER</b>, et permet de basculer sur l'<b>EFFECTIVE RATE</b> si jamais vous tombez a 0% de l'<b>EXCESSIVE RATE.</b></p>
+        <h3>&nbsp;&nbsp;► Volume</h3>
+        <p>Bon celui la me parait assez clair visuellement, pas besoin de l'expliquer, n'oubliez pas que le volume peut aussi se régler avec numpad <b>7</b> et numpad <b>1</b></p>
+        <img src="img/options_volumerg.png" alt = "Volume menu">
+        <h3 id = "challenge">&nbsp;&nbsp;► Challenge options</h3>
+        <p>Uniquement pendant un <b>PREMIUM TIME</b>, vous avez la possibilité de vous mettre un <b>"challenge"</b>. Il se choisit entre : <b>AAA</b>, <b>AAA+</b>, <b>S</b>, <b>UC</b> et <b>PUC</b>. Le challenge à pour rôle de de vous faire automatiquement recomencer votre track si votre challenge est raté. Exemple, si votre challenge est mis sur <b>UC</b> et que vous faites une <b>erreur</b>, vous recommencerez automatiquement au début de la track.</p>
+        <img src="img/options_challengeeg.png" alt ="Challenge menu">
+        <p>/!\ Si vous n'appuyez pas sur <b>00</b>, rater votre challenge vous fera seulement crash et non restart automatiquement</p>
+   
     </div>
     <div class = "main-content">
         <h1 id = Advanced-guide>VII. Guide Avancé</h1>
@@ -370,7 +402,7 @@
         <p>Il est important de prendre les bons réflexes rapidement lors de sa progression dans le jeu, comme la bonne position des mains sur le controlleur.</p>
         <p>Premièrement, pour les bouttons A B C et D, la disposition des doigts la plus classique est celle ci :</p>
         <img src="img/advanced_handpos.png">
-        <p>Avec les indexes sur B et C, et les majeurs + annulaires sur A et D. cette position permet d'avoir une force bien répartie sur tous les bouttons et une facilité à pouvoir déplacer ses mains éfficacement sur le controlleur (chose qu'il va falloir apprendre à faire à partir des niveaux Avancés)</p>
+        <p>Avec les indexes sur B et C, et les majeurs ou annulaires sur A et D. cette position permet d'avoir une force bien répartie sur tous les bouttons et une facilité à pouvoir déplacer ses mains éfficacement sur le controlleur (chose qu'il va falloir apprendre à faire à partir des niveaux Avancés)</p>
         <p>Cette position permet surtout de pouvoir facilement taper les <b>FX</b> avec les <b>POUCES</b>.</p>
         <img src="img/advanced_thumbpos.png">
         <p>Beaucoup de débutants appuient instinctivement les FX avec leurs paumes de mains, et c'est une grosse <b>erreur</b> ! Croyez moi, passé les niveaux 10 ils se retrouvent bloqués</p>
